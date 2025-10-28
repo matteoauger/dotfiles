@@ -12,4 +12,4 @@ opt.shiftwidth = 4
 opt.number = true
 opt.relativenumber = true
 vim.g.snacks_animate = true 
-vim.g.autoformat = false
+vim.g.autoformat = true
