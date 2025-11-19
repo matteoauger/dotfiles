@@ -2,6 +2,15 @@ return {
   {
     "folke/snacks.nvim",
     opts = {
+      explorer = {},
+      picker = {
+        sources = {
+          explorer = {
+            auto_close = true,
+            layout = { preset = "default", preview = "true" },
+          },
+        },
+      },
       dashboard = {
         preset = {
           header = [[
