@@ -1,0 +1,29 @@
+[[language]]
+name = "typescript"
+auto-format = true
+formatter = { command = "prettier", args = ["--parser",  "typescript"] }
+
+[[language]]
+name = "json"
+auto-format = true
+formatter = { command = "prettier", args = ["--parser",  "json"] }
+
+[[language]]
+name = "jsonc"
+auto-format = true
+formatter = { command = "prettier", args = ["--parser",  "json"] }
+
+[[language]]
+name = "c-sharp"
+language-servers = ["csharp-ls"]
+auto-format = false
+formatter = { command = "csharpier", args= [ "format" ] }
+
+[language-server.csharp-ls]
+command = "csharp-ls"
+providedFormatter = true
+
+#[language-server.omnisharp]
+#command = "OmniSharp"
+#args = [ "--languageserver" ]
+#providedFormatter = true 

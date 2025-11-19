@@ -1,0 +1,83 @@
+theme = "kanagawa"
+
+[editor]
+bufferline = "multiple"
+cursorline = true
+line-number = "relative"
+mouse = true
+rulers = [120]
+true-color = true
+auto-format = true
+end-of-line-diagnostics = "hint"
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.indent-guides]
+character = "|"
+render = false
+
+[editor.lsp]
+auto-signature-help = false
+display-messages = true
+
+[editor.file-picker]
+hidden = false
+
+[editor.statusline]
+left = ["mode", "spinner", "file-name", "version-control" ]
+right = ["diagnostics", "selections", "position", "file-encoding", "file-line-ending", "file-type"]
+diagnostics = ["warning", "error"]
+workspace-diagnostics = ["warning", "error"]
+
+[editor.inline-diagnostics]
+cursor-line = "error"
+other-lines = "disable"
+
+# Custom keybinds
+# ---------------------------------------------------------------------------------------------------------------------
+
+[keys.normal]
+S-h = ":buffer-previous"
+S-l = ":buffer-next"
+C-h = "jump_view_left"
+C-j = "jump_view_down"
+C-k = "jump_view_up"
+C-l = "jump_view_right"
+
+# Yazi
+[keys.normal.space]
+space = [
+  ':sh rm -f /tmp/unique-file',
+  ':insert-output yazi %{buffer_name} --chooser-file=/tmp/unique-file',
+  ':insert-output echo "\x1b[?1049h\x1b[?2004h" > /dev/tty',
+  ':open %sh{cat /tmp/unique-file}',
+  ':redraw',
+]
+
+[keys.normal.space.b]
+d = ":buffer-close"
+S-d = ":buffer-close!"
+e = "buffer_picker"
+n = ":buffer-next"
+p = ":buffer-previous"
+
+# Git
+[keys.normal.space.g]
+s = "changed_file_picker" # git status
+g = [                     # Lazygit
+  ":write-all",
+  ":new",
+  ":insert-output lazygit",
+  ":buffer-close!",
+  ":redraw",
+  ":reload-all"
+]
+
+# Code
+[keys.normal.space.c]
+a = "code_action"
+c = "toggle_comments"
+f = ":format"
