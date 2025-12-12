@@ -11,5 +11,5 @@ opt.tabstop = 4
 opt.shiftwidth = 4
 opt.number = true
 opt.relativenumber = true
-vim.g.snacks_animate = true 
+vim.g.snacks_animate = false 
 vim.g.autoformat = true

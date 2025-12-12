@@ -9,6 +9,7 @@ This configuration contains a preconfigured lazyvim.
 - Git >= 2.19.0 (for partial clones support)
 - a Nerd Font(v3.0 or greater) (optional, but needed to display some icons)
 - `lazygit`
+- [yazi](https://yazi-rs.github.io/)
 - `tree-sitter-cli` and a C compiler for nvim-treesitter. See here
 - `curl` for blink.cmp (completion engine)
 - [opencode](https://opencode.ai/) for ai 
