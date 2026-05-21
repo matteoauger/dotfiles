@@ -29,7 +29,8 @@ style = { shape = "Underline", blinking = "On" }
 [keyboard]
 bindings = [ 
     # Keybinds go here
-    { key = "C", mods = "Control|Shift", action = "Copy" },
-    { key = "V", mods = "Control|Shift", action = "Paste"},
-    { key = "!", mods = "Control|Shift", action = "ResetFontSize"},
+    { key = "C",     mods = "Control|Shift", action = "Copy" },
+    { key = "V",     mods = "Control|Shift", action = "Paste" },
+    { key = "!",     mods = "Control|Shift", action = "ResetFontSize" },
+    { key = "Enter", mods = "Alt",           action = "ToggleFullscreen" }
 ]
