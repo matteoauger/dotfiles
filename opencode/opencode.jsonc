@@ -3,14 +3,28 @@
   "permission": {
     "bash": {
       "*": "ask",
-      "git *": "allow",
-      "git commit *": "ask",
-      "git push *": "deny", 
-      "grep *": "allow"
-    },
-     "YouTrack_*": "ask",
+      "cd *": "allow",
+      "ls *": "allow",
+      "cat *": "allow",
+      "rg *": "allow",
+      "grep *": "allow",
+      "date *": "allow",
+      "head *": "allow",
+      "tail *": "allow",
+      "find *": "allow",
+      "wc *": "allow",
+
+      "git *": "ask",
+      "git diff *": "allow",
+      "git status *": "allow",
+
+      // Windows
+      "Get-*": "allow",
+      "Select-String *": "allow",
+    }
+    "chrome-devtools_*": "allow",
+    // "YouTrack_*": "ask",
     //  "postgres_*": "ask",
-    //  "chrome-devtools": "allow",
   },
   "mcp": {
     "chrome-devtools": {
