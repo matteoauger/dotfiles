@@ -3,6 +3,7 @@ return {
     "folke/snacks.nvim",
     opts = {
       explorer = {},
+      indent = { enabled = true },
       picker = {
         sources = {
           explorer = {
@@ -12,7 +13,7 @@ return {
         },
       },
       dashboard = {
-        enabled = false,
+        enabled = true,
         preset = {
           header = [[
        ⣴⣶⣤⡤⠦⣤⣀⣤⠆     ⣈⣭⣭⣿⣶⣿⣦⣼⣆
