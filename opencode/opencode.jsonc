@@ -20,9 +20,9 @@
 
       // Windows
       "Get-*": "allow",
-      "Select-String *": "allow",
-    }
-    "chrome-devtools_*": "allow",
+      "Select-String *": "allow"
+    },
+    "chrome-devtools_*": "allow"
     // "YouTrack_*": "ask",
     //  "postgres_*": "ask",
   },
